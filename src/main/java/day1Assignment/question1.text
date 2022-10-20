@@ -1,0 +1,100 @@
+Q1.
+
+J2EE stands for Java 2 Platform, Enterprise Edition.
+ J2EE is the standard platform for developing applications
+ in the enterprise and is designed for enterprise applications
+ that run on servers. J2EE provides APIs that let developers
+ create workflows and make use of resources such as databases or
+ web services. J2EE consists of a set of APIs. Developers can use
+ these APIs to build applications for business computing.
+
+Clients can access a J2EE 1.4 application as a remote web service in addition to accessing it through HTTP, RMI/IIOP, and JMS.
+
+Application Server and
+Web server
+etc.
+
+
+Clients can access a J2EE 1.4 application as a remote web service in addition to accessing it through HTTP, RMI/IIOP, and JMS.
+
+
+
+Q2.
+
+A Web server exclusively handles HTTP requests, 
+whereas an application server serves business logic to application programs through any number of protocols.
+
+
+Q3
+there are folowing challange occure for developing enterprise level application
+1. Changing Business Requirements
+2. Application Security and Control
+3. Complex API and Third-Party Integrations
+4. Data Storage and Analysis
+5. Development Time
+6. User Experience (UX)
+
+
+Q4.
+
+
+Spring is the most popular application development framework for enterprise Java.
+Millions of developers around the world use Spring Framework to create high performing,
+easily testable, and reusable code.
+Spring framework is an open source Java platform.
+It was initially written by Rod Johnson and was first released under the Apache 2.0 license in June 2003.
+The core features of the Spring Framework can be used in developing any Java application, but there are 
+extensions for building web applications on top of the Java EE platform. Spring framework targets to 
+make J2EE development easier to use and promotes good programming practices by enabling a POJO-based programming model.
+
+
+
+Q5.
+
+class Collage{
+
+private getService s;
+
+// here we  arre using seter and constructor method to use to set for sand the this application will be loosly coupled.
+
+public void doJob(){
+System.out.println(”Job is started”);
+//here it needs the service of its Dependencies
+}
+}
+Dependencies classes :
+
+class Teacher{
+
+
+
+public void teaches Implements getService{
+ System.out.println(”Teacher teaches”);
+}
+
+@Override
+public service(){
+teaches();
+}
+
+
+}
+class2:
+class Clerk  Implemments getService{
+public void registerStudent() {
+ System.out.println(”enroll the Student in Collage”);
+}
+
+@Override
+public service(){
+
+ registerStudent();
+
+}
+}
+
+public interface getService{
+
+public service();
+
+}
